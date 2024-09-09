@@ -1,0 +1,17 @@
+/* HomePage.css */
+
+.content {
+    margin-top: 70px; /* Adjust according to the navbar height */
+    padding: 20px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .content p {
+    font-size: 18px;
+  }
+  
