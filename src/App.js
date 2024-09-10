@@ -8,6 +8,7 @@ import DepartmentForm from './pages/DepartmentForm';
 import ResearchLabForm from './pages/ResearchLabForm';
 import UserForm from './pages/UserForm';
 import RoleMasterForm from './pages/RoleMasterForm';
+import AssignRole from './pages/AssignRole';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/research-lab" element={<ResearchLabForm />} />
         <Route path="/user" element={<UserForm />} />
         <Route path="/role-master" element={<RoleMasterForm />} />
+        <Route path="/assign-role" element={<AssignRole />} />
         {/* Add more routes here if needed */}
       </Routes>
     </div>

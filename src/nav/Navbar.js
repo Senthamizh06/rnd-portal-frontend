@@ -27,6 +27,8 @@ const Navbar = () => {
               <Link to="/user" onClick={toggleDropdown}>User</Link>
               
               <Link to="/role-master" onClick={toggleDropdown}>Role Master</Link>
+              <Link to="/assign-role" onClick={toggleDropdown}>Assign Role</Link>
+
               <a href="#settings">Settings</a>
               <a href="#logout">Logout</a>
             </div>

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import './RoleMasterForm.css';
+import './AssignRole.css';
 
-const RoleMasterForm = () => {
+const AssignRole = () => {
   const [roleId, setRoleId] = useState('');
-  const [description, setDescription] = useState('');
+  const [userId, setDescription] = useState('');
 
   const handleCreate = () => {
     // Logic to handle role creation
     console.log('Creating role:', {
       roleId,
-      description,
+      userId,
     });
   };
 
@@ -23,7 +23,7 @@ const RoleMasterForm = () => {
 
   return (
     <div className="form-container">
-      <h2>Role Master</h2>
+      <h2>Assign Role</h2>
       <div className="form-group">
         <label>Role ID</label>
         <input
@@ -33,10 +33,10 @@ const RoleMasterForm = () => {
         />
       </div>
       <div className="form-group">
-        <label>Description</label>
+        <label>User ID</label>
         <input
           type="text"
-          value={description}
+          value={userId}
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
@@ -50,4 +50,4 @@ const RoleMasterForm = () => {
   );
 };
 
-export default RoleMasterForm;
+export default AssignRole;
