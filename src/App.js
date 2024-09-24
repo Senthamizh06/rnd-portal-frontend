@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './nav/Navbar';
+import Profile from './pages/Profile'; // Adjust the path if Profile is in a different directory
+
+
 
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
@@ -27,6 +30,8 @@ function App() {
         <Route path="/user" element={<UserForm />} />
         <Route path="/role-master" element={<RoleMasterForm />} />
         <Route path="/assign-role" element={<AssignRole />} />
+        <Route path="/settings" element={<Profile />} />
+
         {/* Add more routes here if needed */}
       </Routes>
     </div>

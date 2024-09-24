@@ -1,78 +1,150 @@
 /* Style for form container */
-/* Style for form container */
 .form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
+  max-width: 600px; /* Increased max-width to accommodate larger content */
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  overflow-x: auto; /* Enable horizontal scroll for overflow */
+}
+
+/* Style for form fields */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 1;
+  margin-left: 70px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 6px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Style for buttons */
+.button-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #002366;
+  color:white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific button colors */
+.btn-create {
+  background-color: #002366;
+}
+
+.btn-delete {
+  background-color: #8B0000;
+}
+
+.btn-search {
+  background-color: #1E90FF;
+}
+
+.btn-update {
+  background-color: #28a745;
+}
+
+/* Table styling */
+.department-table {
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.department-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.department-table th,
+.department-table td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
   
-  /* Style for form fields */
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
+}
+
+.department-table th {
+  background-color: #002366;
+  color:white;
   
-  .form-group label {
-    flex: 1;
-    
-    margin-left: 40px;
-  }
+}
+
+.department-table td {
+  white-space: nowrap;
+  padding: 10px;
+  min-width: 50px;
   
-  .form-group input {
-    flex: 1;
-    padding: 6px;
-    width: 70%; /* Reduced input box size */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 800px;
-    margin-right: 25px;
-    margin-left: 5px;
-  }
-  
-  /* Button container styling */
-  .button-container {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    gap: 10px; /* Space between buttons */
-    margin-top: 20px;
-    width: 100%; /* Ensure the container spans the full width */
-  }
-  
-  /* Style for buttons */
-  .button-container button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #002366; /* Navy Blue */
-    color: white;
-    font-size: 14px;
-    transition: background-color 0.3s;
-  }
-  
-  /* Button hover effects */
-  .button-container button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Specific button colors */
-  .btn-create {
-    background-color: #002366;
-  }
-  
-  .btn-delete {
-    background-color: #8B0000; /* Dark Red */
-  }
-  
-  .btn-search {
-    background-color: #1E90FF; /* Dodger Blue */
-  }
-  
-  .btn-update {
-    background-color: #28a745; /* Green */
-  }
-  
+}
+
+.department-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Adjust individual column widths */
+.department-table th:nth-child(1),
+.department-table td:nth-child(1) {
+  width: 15%; /* Reduced to avoid overflow */
+}
+
+.department-table th:nth-child(2),
+.department-table td:nth-child(2) {
+  width: 25%; /* Adjusted width */
+}
+
+.department-table th:nth-child(3),
+.department-table td:nth-child(3) {
+  width: 40%; /* Adjusted width */
+}
+
+.department-table th:nth-child(4),
+.department-table td:nth-child(4) {
+  width: 20%; /* Set a width for the action buttons */
+}
+
+/* Ensure the button in the table is fully visible */
+.table-action-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #002366;
+  color:red;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: 50px;
+}
+
+.table-action-btn:hover {
+  background-color: #0056b3;
+ 
+}
+

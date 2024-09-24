@@ -1,4 +1,4 @@
-/* Your existing styles */
+* Your existing styles */
 .form-container {
     max-width: 500px;
     margin: 50px auto;
@@ -29,19 +29,26 @@
     flex: 1; /* Distribute available space evenly between label and input/select */
   }
   
-  .form-group input[type="text"],
-  .form-group select {
-    width: 100%;
+  /* Adjusting input and select boxes to match sizes */
+.form-group input[type="text"],
+.form-group select {
+    width: calc(100% - 40px); /* Ensure input and select box match width */
     height: 40px;
     padding: 8px;
+    margin: 0 20px; /* Adds 20px padding on both sides */
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
-  
-  
-    flex: 2; /* Distribute available space evenly between label and input/select */
-  }
-  
+}
+
+
+.form-group select {
+  width: 90%; /* Ensures the select box matches the input width */
+  height: 40px;
+  margin-left: 60px;
+  margin-right: 55px; 
+  border-radius: 5px;/* Ensure it has the same height as the input boxes */
+}
   .button-group {
     display: flex;
     justify-content: flex-end;
@@ -61,4 +68,3 @@
   .button-group button:hover {
     background-color: darkblue;
   }
-  

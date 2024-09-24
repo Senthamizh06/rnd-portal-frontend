@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from '../nav/Navbar';
+
+
   // Import the Navbar component
 import '../pages/HomePage.css';  // We will create this file later
 
